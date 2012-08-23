@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Signal";
+  src: url("../fonts/Signal/signal-no2-d-webfont.eot");
+  src: local('☺'),
+  url("../fonts/Signal/signal-no2-d-webfont.woff") format("woff"),
+  url("../fonts/Signal/signal-no2-d-webfont.ttf") format("truetype"),
+  url("../fonts/Signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg");
+}
+
+@font-face {
+  font-family: "LeagueGothicRegular";
+  src: url("../fonts/LeagueGothic/League_Gothic-webfont.eot");
+  src: url("../fonts/LeagueGothic/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/LeagueGothic/League_Gothic-webfont.woff") format("woff"),
+       url("../fonts/LeagueGothic/League_Gothic-webfont.ttf") format("truetype"),
+       url("../fonts/LeagueGothic/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   color: #111316;
+   font-size: 22px;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hr {
+  border-top: 1px solid #fff;
+  background: #e4e3e3;
+  width: 940px;
+  margin: 0 auto;
+  height: 1px;
+  overflow: hidden;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.masthead {
+  background: #990000;
+  height: 5px;
+}
+
+h1, h2 {
+  font-family: "LeagueGothicRegular";
+  color: #111316;
+}
+h1 {
+  font-size: 120px;
+}
+h2 {
+  font-size: 80px;
+  margin: 70px 0 30px 0;
+
+}
+
+.section {
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid #d8dce2;
+}
+
+.section .inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.intro {}
+.fake-phone, .deets {
+  height: 926px;
+  margin: 50px 0;
+  position: relative;
+  float: left;
+}
+.fake-phone {
+  width: 500px;
+}
+.fake-phone .frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 405px;
+  height: 926px;
+  background: 0 0 url("../images/phone-frame.png") no-repeat;
+  z-index: 10;
+}
+.fake-phone .screen {
+  position: absolute;
+  top: 163px;
+  right: 31px;
+  width: 340px;
+  height: 490px;
+  overflow: hidden;
+}
+.fake-phone .screen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fake-phone .screen .offscreen-right {
+  left: 340px;
+}
+.fake-phone .screen .offscreen-left {
+  left: -340px;
+}
+.fake-phone .screen .onscreen {
+  left: 0;
+}
+
+.deets {
+  width: 356px;
+  padding-left: 144px;
+  text-align: left;
+}
+.deets h1 {
+  position: absolute;
+  top: 70px;
+  width: 210px;
+  text-align: left;
+  line-height: 0.9;
+}
+.deets a {
+  display: block;
+  float: left;
+}
+.deets .flibble {
+  position: absolute;
+  top: 550px;
+}
+.deets .get-it {
+  background: 0 0 url("../images/top-get-it.png") no-repeat;
+  width: 320px;
+  height: 80px;
+}
+.deets .uses-readability {
+  background: 0 0 url("../images/uses-readability.png") no-repeat;
+  width: 150px;
+  height: 50px;
+  margin: 100px 0 0 20px;
+}
+
+.how {
+  background: #f2f2f2 0 0 url("../images/background-noise.png") repeat;
+}
+.how h2 {
+  text-shadow: -1px -1px 0 #fff;
+  filter: dropshadow(color=#fff, offx=-1, offy=-1);
+}
+.screens {
+  overflow: auto;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.screens li {
+  float: left;
+  width: 320px;
+  margin-right: 20px;
+}
+.screens li:last-child {
+  margin-right: 0;
+}
+
+.features {
+  overflow: hidden;
+  margin: 15px 0;
+}
+.plus {
+  float: left;
+  width: 320px;
+  margin-right: 20px;
+  padding-top: 45px;
+}
+.features ul {
+  float: left;
+  width: 650px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #545454;
+  text-align: left;
+}
+.features ul li {
+  float: left;
+  width: 280px;
+  padding-left: 45px;
+  margin: 25px 0;
+}
+
+
+.contact {}
+.contact ul, .purchase {
+  width: 620px;
+  margin: 0 auto;
+}
+.contact ul {
+  text-align: left;
+}
+.contact li {
+  float: left;
+  width: 161px;
+  padding-left: 45px;
+}
+.contact a, .contact a:active, .contact a:visited {
+  color: #660000;
+  font-size: 20px;
+}
+
+.people {
+  background: #262626;
+  color: #fbf9f9;
+  border-bottom: none;
+}
+.people a, .people a:active, .people a:visited {
+  color: #fbf9f9;
+}
+.people h2 {
+  font-family: "Signal";
+  color: #fff;
+  font-size: 26px;
+}
+.mugshots {
+  overflow: auto;
+  font-size: 24px;
+  margin: 60px 0;
+}
+.mugshots li {
+  float: left;
+  width: 320px;
+  margin-right: 20px;
+}
+.mugshots li:last-child {
+  margin-right: 0;
+}
+.spiel {
+  width: 661px;
+  margin: 40px auto;
+}
