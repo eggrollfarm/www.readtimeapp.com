@@ -55,6 +55,13 @@ ul {
   height: 5px;
 }
 
+.inner-shadow {
+  height: 7px;
+  background: 0 0 url("../images/inner-shadow.png") repeat-x;
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2 {
   font-family: "LeagueGothicRegular";
   color: #111316;
@@ -113,13 +120,18 @@ h2 {
   left: 0;
 }
 .fake-phone .screen .offscreen-right {
-  left: 340px;
+  left: 350px;
 }
 .fake-phone .screen .offscreen-left {
-  left: -340px;
+  left: -350px;
 }
 .fake-phone .screen .onscreen {
   left: 0;
+}
+
+img.article {
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.4);
 }
 
 .deets {
@@ -138,11 +150,12 @@ h2 {
   display: block;
   float: left;
 }
-.deets .flibble {
+.deets .links {
   position: absolute;
   top: 550px;
 }
-.deets .get-it {
+.deets .get-it, .purchase .get-it {
+  display: block;
   background: 0 0 url("../images/top-get-it.png") no-repeat;
   width: 320px;
   height: 80px;
@@ -159,7 +172,6 @@ h2 {
 }
 .how h2 {
   text-shadow: -1px -1px 0 #fff;
-  filter: dropshadow(color=#fff, offx=-1, offy=-1);
 }
 .screens {
   overflow: auto;
@@ -198,21 +210,60 @@ h2 {
   width: 280px;
   padding-left: 45px;
   margin: 25px 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
+.features .twitter {
+  background-image: url("../images/twitter-icon.png");
+}
+.features .email {
+  background-image: url("../images/email-icon.png");
+}
+.features .archive {
+  background-image: url("../images/archive-icon.png");
+}
+.features .readability {
+  background-image: url("../images/readability-icon.png");
+}
 
-.contact {}
 .contact ul, .purchase {
   width: 620px;
-  margin: 0 auto;
+  margin: 40px auto;
+  overflow: hidden;
 }
+.purchase a {
+  display: block;
+  float: left;
+}
+.purchase .requires-readability {
+  background: 0 0 url("../images/requires-readability.png") no-repeat;
+  width: 250px;
+  height: 80px;
+  margin-left: 20px;
+}
+
 .contact ul {
   text-align: left;
 }
 .contact li {
   float: left;
-  width: 161px;
-  padding-left: 45px;
+  width: 171px;
+  padding-left: 35px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.contact .support {
+  background-image: url("../images/contact-support-icon.png");
+  width: 103px;
+}
+.contact .twitter {
+  background-image: url("../images/contact-twitter-icon.png");
+  width: 205px;
+}
+.contact .email {
+  background-image: url("../images/contact-email-icon.png");
+  width: 205px;
 }
 .contact a, .contact a:active, .contact a:visited {
   color: #660000;
@@ -233,7 +284,7 @@ h2 {
   font-size: 26px;
 }
 .mugshots {
-  overflow: auto;
+  overflow: hidden;
   font-size: 24px;
   margin: 60px 0;
 }
@@ -248,4 +299,9 @@ h2 {
 .spiel {
   width: 661px;
   margin: 40px auto;
+}
+.cogent {
+  font-size: 16px;
+  font-family: "Signal";
+  margin: 60px 0;
 }
