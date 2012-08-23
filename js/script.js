@@ -16,5 +16,5 @@ $(document).ready(function() {
     });
   }
 
-  setTimeout(showArticle, 3000);
+  setTimeout(showArticle, 6000);
 });
