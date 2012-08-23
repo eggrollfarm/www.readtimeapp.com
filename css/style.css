@@ -144,8 +144,19 @@ img.article {
   top: 70px;
   width: 210px;
   text-align: left;
-  line-height: 0.9;
+  line-height: 0;
 }
+.deets h1.good-time { top: 90px; }
+
+.deets h1 span { display: block; }
+.deets h1 .line-1 { line-height: 1; }
+.deets h1 .line-2 { line-height: 0.9; }
+.deets h1 .line-3 { line-height: 1; }
+
+.deets h1.good-time .line-1 { line-height: 0.75; }
+.deets h1.good-time .line-3 { line-height: 1.15; }
+
+
 .deets a {
   display: block;
   float: left;
