@@ -155,6 +155,7 @@ img.article {
   top: 550px;
 }
 .deets .get-it, .purchase .get-it {
+  clear: both;
   display: block;
   background: 0 0 url("../images/top-get-it.png") no-repeat;
   width: 320px;
@@ -174,7 +175,7 @@ img.article {
   text-shadow: -1px -1px 0 #fff;
 }
 .screens {
-  overflow: auto;
+  overflow: hidden;
   font-size: 26px;
   margin-bottom: 15px;
 }
@@ -304,4 +305,9 @@ img.article {
   font-size: 16px;
   font-family: "Signal";
   margin: 60px 0;
+}
+
+/* IE 8 HACK */
+.last {
+  margin-right: 0 !important;
 }
