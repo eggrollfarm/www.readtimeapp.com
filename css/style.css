@@ -1,19 +1,22 @@
 @font-face {
   font-family: "Signal";
   src: url("../fonts/Signal/signal-no2-d-webfont.eot");
-  src: local('☺'),
-  url("../fonts/Signal/signal-no2-d-webfont.woff") format("woff"),
-  url("../fonts/Signal/signal-no2-d-webfont.ttf") format("truetype"),
-  url("../fonts/Signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg");
+  src: url("../fonts/Signal/signal-no2-d-webfont.svg#SignalNo2DRegular") format("svg"),
+       local('☺'),
+       url("../fonts/Signal/signal-no2-d-webfont.woff") format("woff"),
+       url("../fonts/Signal/signal-no2-d-webfont.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+  font-variant:normal;
 }
 
 @font-face {
   font-family: "LeagueGothicRegular";
   src: url("../fonts/LeagueGothic/League_Gothic-webfont.eot");
-  src: url("../fonts/LeagueGothic/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/LeagueGothic/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg"),
+       url("../fonts/LeagueGothic/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"),
        url("../fonts/LeagueGothic/League_Gothic-webfont.woff") format("woff"),
-       url("../fonts/LeagueGothic/League_Gothic-webfont.ttf") format("truetype"),
-       url("../fonts/LeagueGothic/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg");
+       url("../fonts/LeagueGothic/League_Gothic-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -65,6 +68,7 @@ ul {
 h1, h2 {
   font-family: "LeagueGothicRegular";
   color: #111316;
+  font-weight: normal;
 }
 h1 {
   font-size: 120px;
