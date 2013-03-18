@@ -25,8 +25,9 @@ body {
   Makes the animation of the iPhone much smoother...
 */
 #skrollr-body * {
-  -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  z-index: 1;
 }
 
 .hide-text {
@@ -134,7 +135,6 @@ body {
   height: 432px;
   top: 109px;
   left: 27px;
-  -webkit-transform-style: preserve-3d;
 }
 
 .phone .screen img {
