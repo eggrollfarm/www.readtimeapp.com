@@ -37,16 +37,6 @@
     <div class="intro fixed section">
       <div class="inner">
         <h1>Get things read.</h1>
-
-        <div class="phone" data-110="top:20px" data-400="top:620px;" data-710="top:620px" data-1000="top:1220px;" data-1310="top:1220px" data-1600="top:1820px">
-          <div class="screen">
-            <img src="images/phone-dial.png">
-            <img src="images/phone-reading-service.png" data-400="margin-left: 102%;" data-500="margin-left: 0;">
-            <img src="images/phone-dial.png" data-1000="margin-left: 102%;" data-1100="margin-left: 0;">
-            <img src="images/phone-article-view.png" data-1600="margin-left: 102%;" data-1700="margin-left: 0;">
-          </div>
-          <div class="gloss">&nbsp;</div>
-        </div>
       </div>
     </div>
 
@@ -143,6 +133,18 @@
     </div>
   </div>
 
+  <div class="phone-container">
+    <div class="phone" data-110="top:120px" data-400="top:720px;" data-710="top:720px" data-1000="top:1320px;" data-1310="top:1320px" data-1600="top:1920px">
+      <div class="screen">
+        <img src="images/phone-dial.png">
+        <img src="images/phone-reading-service.png" data-300="margin-left: 102%;" data-500="margin-left: 0;">
+        <img src="images/phone-dial.png" data-1000="margin-left: 102%;" data-1100="margin-left: 0;">
+        <img src="images/phone-article-view.png" data-1600="margin-left: 102%;" data-1700="margin-left: 0;">
+      </div>
+      <div class="gloss">&nbsp;</div>
+    </div>
+  </div>
+
   <script src="js/libs/skrollr.min.js"></script>
   <script type="text/javascript">
     //http://detectmobilebrowsers.com/ + tablets
@@ -170,7 +172,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
-    var s = skrollr.init({forceHeight: false});
+    var s = skrollr.init();
   </script>
 </body>
 

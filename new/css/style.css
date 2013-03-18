@@ -20,8 +20,13 @@ body {
   right: 0;
 }
 
-.skrollr-mobile #skrollr-body * {
-  -webkit-transform: translate3d(0,0,0);
+/*
+  Hack to enable hardware acceleration on iOS and Webkit browsers.
+  Makes the animation of the iPhone much smoother...
+*/
+#skrollr-body * {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 
 .hide-text {
@@ -106,15 +111,20 @@ body {
   text-shadow: 0 0 20px rgba(19, 24, 54, 0.80);
 }
 
+.phone-container {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
 .phone {
   position: absolute;
-  left: 560px;
-  top: 20px;
+  left: 635px;
+  top: 120px;
   background: 0 0 url("../images/phone-frame.png") no-repeat;
   width: 300px;
   height: 628px;
   overflow: hidden;
-  z-index: 10;
 }
 
 .phone .screen {
@@ -124,6 +134,7 @@ body {
   height: 432px;
   top: 109px;
   left: 27px;
+  -webkit-transform-style: preserve-3d;
 }
 
 .phone .screen img {
