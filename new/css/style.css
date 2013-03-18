@@ -102,20 +102,22 @@ body {
   text-shadow: 0 0 20px rgba(19, 24, 54, 0.80);
 }
 
-.phone-container {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
+.intro .phone {
+  left: 560px;
 }
 
 .phone {
   position: absolute;
-  left: 560px;
-  top: 120px;
+  left: 640px;
+  top: 20px;
   background: 0 0 url("../images/phone-frame.png") no-repeat;
   width: 300px;
   height: 628px;
   overflow: hidden;
+}
+
+.static.phone {
+  display: none;
 }
 
 .phone .screen {
@@ -321,4 +323,16 @@ body {
   background: 0 center url("../images/cogent-logo-small.png") no-repeat;
   padding-left: 40px;
   width: 120px;
+}
+
+body.mobile .static.phone {
+  display: block;
+}
+
+body.mobile .connect .phone, body.mobile .start-reading .phone {
+  left: 0;
+}
+
+body.mobile .connect .about, body.mobile .start-reading .about {
+  float: right;
 }
