@@ -114,6 +114,7 @@ body {
   width: 300px;
   height: 628px;
   overflow: hidden;
+  z-index: 10;
 }
 
 .phone .screen {
