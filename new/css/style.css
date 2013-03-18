@@ -20,6 +20,10 @@ body {
   right: 0;
 }
 
+.skrollr-mobile #skrollr-body * {
+  -webkit-transform: translate3d(0,0,0);
+}
+
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
