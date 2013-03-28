@@ -460,7 +460,7 @@ ul.dual li {
   }
 }
 
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 515px) {
   .intro h1 {
     font-size: 80px;
   }
