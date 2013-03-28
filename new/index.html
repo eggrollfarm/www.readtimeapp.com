@@ -6,10 +6,11 @@
 <head class="no-skrollr">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <title>Readtime - Get things read</title>
   <meta name="description" content="Make the most of spare moments to get your reading done. Pile-up of things you intend to read, but never get to? Readtime is the perfect app for you.">
   <meta name="author" content="Cogent">
+  <meta content="app-id=549039409" name="apple-itunes-app">
 
   <link rel="stylesheet" href="css/normalize-2.1.0.css">
   <link rel="stylesheet" href="css/style.css">
@@ -25,7 +26,7 @@
 <![endif]-->
 </head>
 
-<body>
+<body class="mobile">
   <div id="skrollr-body">
     <div class="brand-bar section">
       <div class="inner">
@@ -52,15 +53,18 @@
     <div class="connect fixed section">
       <div class="inner">
         <div class="about">
-          <h2>Connect with your favourite &lsquo;read later&rsquo; service</h2>
-          <p>Read and archive articles you save to <strong>Readability</strong> and <strong>Pocket</strong>.</p>
-        </div>
-
-        <div class="static phone">
-          <div class="screen">
-            <img src="images/phone-reading-service.png">
+          <h2>Connect with your favourite read later service</h2>
+          <div class="screenshot">
+            <div class="phone">
+              <div class="screen">
+                <img src="images/phone-reading-service.png">
+              </div>
+              <div class="gloss">&nbsp;</div>
+            </div>
           </div>
-          <div class="gloss">&nbsp;</div>
+          <p>
+            Retrieve and store articles you've saved to <strong>Pocket</strong> or <strong>Readability</strong> for offline reading. Never look at that daunting list again!
+          </p>
         </div>
       </div>
     </div>
@@ -69,14 +73,14 @@
       <div class="inner">
         <div class="about">
           <h2>Dial up the time</h2>
-          <p>Choose how long you want to read for, and if you want to read long or short articles.</p>
-        </div>
-
-        <div class="static phone">
-          <div class="screen">
-            <img src="images/phone-dial.png">
+          <div class="screenshot">
+            <div class="phone">
+              <div class="screen">
+                <img src="images/phone-dial.png">
+              </div>
+            </div>
           </div>
-          <div class="gloss">&nbsp;</div>
+          <p>Spin the dial to set your reading time then hit the button. No need to rush, you'll see as many articles as suits your reading speed.</p>
         </div>
       </div>
     </div>
@@ -85,54 +89,53 @@
       <div class="inner">
         <div class="about">
           <h2>Start reading</h2>
-          <p>Enjoy your articles in a clear, readable way. Never feel rushed because we’ve picked the articles that will fit in with your time.</p>
-        </div>
-        <div class="static phone">
-          <div class="screen">
-            <img src="images/phone-article-view.png">
+          <div class="screenshot">
+            <div class="phone">
+              <div class="screen">
+                <img src="images/phone-article-view.png">
+              </div>
+            </div>
           </div>
-          <div class="gloss">&nbsp;</div>
+          <p>Enjoy a fresh &amp; clean reading view and swipe an article to archive. Save links for later and favourite articles to your reading service.</p>
         </div>
       </div>
     </div>
 
     <div class="quotes section">
       <div class="inner">
-        <div class="dual">
-          <div class="quote">
+        <ul class="dual">
+          <li>
             <p>
               A dead-simple app for quickly accessing your Readability reading list for those idle moments throughout your day.
             </p>
             <div class="author">Matt Elliott, CNET</div>
-          </div>
-          <div class="quote">
+          </li>
+          <li>
             <p>
               It's handy when you're waiting in line, on a lunch break, or you just have a few minutes to kill.
             </p>
             <div class="author">Thorin Klosowski, Lifehacker</div>
-          </div>
-        </div>
-        <div class="dual last">
-          <div class="quote">
+          </li>
+          <li>
             <p>
               A novel time-based Readability reader for iOS that's great for killing a few minutes in queues, on public transport...
             </p>
             <div class="author">Jack Mottram, One Thing Well</div>
-          </div>
-          <div class="japanese quote">
+          </li>
+          <li>
             <p>
-              今日は泡洗車で、愛車を洗う。
+              読まずにスルーしがちなウェブ記事を読むように働きかけてくれるアプリというのは、珍しいアプリだと思います。
             </p>
-            <div class="author">Daniel San, Karate Kid</div>
-          </div>
-        </div>
+            <div class="author">Lifehacker Japan</div>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="features section">
       <div class="inner">
         <h2>Get a load of these great features</h2>
-        <ul>
+        <ul class="dual">
           <li>Connect with <strong>Readability</strong> and <strong>Pocket</strong></li>
           <li>Add links to <strong>Readability</strong> and <strong>Pocket</strong></li>
           <li>Swipe articles to archive for later</li>
@@ -185,7 +188,7 @@
       {
         $("body").addClass("mobile")
       } else {
-        skrollr.init();
+        skrollr.init({forceHeight: false});
       }
     })(navigator.userAgent||navigator.vendor||window.opera);
 

@@ -28,7 +28,8 @@ body {
 
 .section .inner {
   position: relative;
-  width: 940px;
+  max-width: 980px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 
@@ -41,41 +42,24 @@ body {
 }
 
 .brand-bar .inner {
-  height: 100px;
+  overflow: auto;
 }
 
 .brand-bar h1 {
-  position: absolute;
-  margin: 0;
   width: 215px;
-  left: 0;
-  top: 0;
-  bottom: 0;
+  height: 70px;
   background: center left url("../images/readtime-logo.png") no-repeat;
+  float: left;
+  margin: 15px 0;
 }
 
 .brand-bar .get-it {
   display: block;
-  position: absolute;
-  right: 0;
-  top: 30px;
+  float: right;
+  margin: 30px 0;
   width: 135px;
   height: 40px;
   background: top left url("../images/app-store.png") no-repeat;
-}
-
-.dual {
-  overflow: auto;
-}
-
-.dual div {
-  float: left;
-  width: 420px;
-  padding-right: 60px;
-}
-
-.dual div:last-child {
-  padding-right: 0;
 }
 
 .intro {
@@ -87,7 +71,11 @@ body {
 .intro .inner {
   position: relative;
   margin: 0 auto;
-  width: 780px;
+  max-width: 780px;
+}
+
+.screenshot {
+  display: none;
 }
 
 .intro h1 {
@@ -167,7 +155,7 @@ body {
 .about {
   font-size: 18px;
   color: #525252;
-  width: 440px;
+  max-width: 440px;
   line-height: 1.5;
   padding-top: 220px;
 }
@@ -181,39 +169,44 @@ body {
   margin: 0;
 }
 
+ul.dual {
+  overflow: auto;
+}
+
+ul.dual li {
+  padding: 20px 50px 20px 0;
+  float: left;
+  width: 440px;
+}
+
 .quotes {
   background: #DE0000;
   font-size: 24px;
   line-height: 1.4;
   color: #F3F3F3;
-  padding: 40px;
+  padding: 40px 0 40px 0;
 }
 
-.quote {
+.quotes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quotes li {
   position: relative;
-  min-height: 190px;
+  border-top: 1px solid #BA000D;
 }
 
-.japanese.quote p {
-  font-size: 32px;
+.quotes li:first-child, .quotes li:nth-child(2) {
+  border-top: none;
 }
 
 .quotes .author {
   font-family: "LeagueGothicRegular";
   font-weight: normal;
   font-size: 28px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.quotes .dual {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid #BA000D;
-}
-
-.quotes .dual.last {
-  border-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .features {
@@ -233,17 +226,13 @@ body {
 
 .features ul {
   list-style-type: none;
-  border-top: 1px solid #424242;
   margin: 30px 0 50px 0;
   padding: 0;
-  overflow: auto;
+  border-bottom: 1px solid #424242;
 }
 
 .features li {
-  float: left;
-  width: 430px;
-  padding: 30px 40px 30px 0;
-  border-bottom: 1px solid #424242;
+  border-top: 1px solid #424242;
 }
 
 .features strong {
@@ -304,7 +293,7 @@ body {
   margin: 0 auto;
   padding: 0;
   overflow: auto;
-  width: 648px;
+  max-width: 648px;
 }
 
 .contact li {
@@ -325,14 +314,211 @@ body {
   width: 120px;
 }
 
-body.mobile .static.phone {
-  display: block;
+@media screen and (max-width: 1060px) {
+  .skrollable {
+    top: 0 !important;
+  }
+
+  img.skrollable {
+    margin-left: 102% !important;
+  }
+
+  .fixed.section {
+    height: auto;
+  }
+
+  .section .inner {
+    overflow: hidden;
+  }
+
+  .fixed.section.intro {
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .intro .phone {
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .intro h1 {
+    display: block;
+    float: none;
+    width: auto;
+    text-align: center;
+    font-size: 100px;
+    margin: 20px auto;
+  }
+
+  .phone {
+    position: relative;
+    display: block;
+    left: auto;
+    top: auto;
+  }
+
+  .about {
+    max-width: none;
+    padding-top: 0;
+    margin: 80px 0 100px 0;
+    position: relative;
+  }
+
+  ul.dual li {
+    padding-right: 0;
+    float: none;
+    width: auto;
+  }
+
+  .screenshot {
+    display: block;
+    margin: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #999;
+  }
+
+  .quotes li:nth-child(2) {
+    border-top: 1px solid #BA000D;
+  }
 }
 
-body.mobile .connect .phone, body.mobile .start-reading .phone {
-  left: 0;
+.quotes li:first-child, .quotes li:nth-child(2) {
+
 }
 
-body.mobile .connect .about, body.mobile .start-reading .about {
-  float: right;
+@media screen and (max-width: 1060px) and (min-width:768px) {
+  .about {
+    height: 450px;
+  }
+
+  .about h2 {
+    padding-top: 120px;
+  }
+
+  .connect .about h2 {
+    padding-top: 100px;
+  }
+
+  .about h2, .about p {
+    margin-right: 425px;
+  }
+
+  .screenshot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 430px;
+    padding: 0 30px;
+  }
+}
+
+/* iPad */
+@media screen and (max-width:768px) {
+  .brand-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 778px) and (min-width: 768px) {
+  .connect .about h2 {
+    padding-top: 40px;
+  }
+}
+
+/* Less than iPad but bigger than iPhone */
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .about p, .about .screenshot {
+    max-width: 510px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about h2 {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .about p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .screenshot {
+    height: 360px;
+    overflow: hidden;
+  }
+
+  .screenshot .phone {
+    margin: 0 auto;
+  }
+
+  .contact li {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .intro h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .intro h1 {
+    font-size: 70px;
+  }
+}
+
+/* iPhone - Portrait */
+@media screen and (max-width: 320px) {
+  .section .inner {
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  .phone {
+    width: 255px;
+    height: 534px;
+    -webkit-background-size: cover;
+  }
+
+  .phone .screen {
+    width: 215px;5
+    height: 368px;
+    top: 92px;
+    left: 22px;
+  }
+
+  .phone .screen img {
+    width: 100%;
+    margin-left: 105%;
+  }
+
+  .phone .gloss {
+    -webkit-background-size: cover;
+  }
+
+  .intro {
+    -webkit-background-size: cover;
+  }
+
+  .intro h1 {
+    font-size: 56px;
+  }
+
+  .intro.fixed.section {
+    height: 500px;
+  }
+
+  .about h2 {
+    font-size: 56px;
+    line-height: 1.1;
+  }
+
+  .go-get-it img {
+    width: 90%;
+  }
 }
