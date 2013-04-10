@@ -479,17 +479,21 @@ ul.dual li {
     padding-right: 20px;
   }
 
+  .about .screenshot {
+    height: 320px;
+  }
+
   .phone {
-    width: 255px;
-    height: 534px;
+    width: 210px;
+    height: 439.6px;
     -webkit-background-size: cover;
   }
 
   .phone .screen {
-    width: 215px;5
-    height: 368px;
-    top: 92px;
-    left: 22px;
+    width: 177px;
+    height: 303px;
+    top: 76px;
+    left: 19px;
   }
 
   .phone .screen img {
@@ -510,11 +514,11 @@ ul.dual li {
   }
 
   .intro.fixed.section {
-    height: 500px;
+    height: 445px;
   }
 
   .about h2 {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 1.1;
   }
 
