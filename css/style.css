@@ -293,12 +293,12 @@ ul.dual li {
   margin: 0 auto;
   padding: 0;
   overflow: auto;
-  max-width: 648px;
+  max-width: 678px;
 }
 
 .contact li {
   float: left;
-  width: 160px;
+  width: 170px;
   margin: 0 28px;
   text-align: center;
   line-height: 60px;
